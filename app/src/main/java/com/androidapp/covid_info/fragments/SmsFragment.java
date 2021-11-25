@@ -29,8 +29,7 @@ public class SmsFragment extends Fragment {
     @BindView(R.id.webview)
     WebView webview;
     Activity context;
-    private String mParam1;
-    private String mParam2;
+
     public SmsFragment() {
         // Required empty public constructor
     }
@@ -42,10 +41,7 @@ public class SmsFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
