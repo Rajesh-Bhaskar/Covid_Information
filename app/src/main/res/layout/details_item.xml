@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_8"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="@color/layout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/pt_16"
+            android:textStyle="bold"
+            tools:text="India" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/date"
+            >
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/Cases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text="Cases"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="Status"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/Casesnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    />
+
+                <TextView
+                    android:id="@+id/statusnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

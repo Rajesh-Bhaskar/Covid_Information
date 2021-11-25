@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/cardview_light_background</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:alertDialogTheme">
+            @style/MaterialAlertDialog.MaterialComponents.Title.Icon
+        </item>
+        <!--To make screen appearance black-->
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">
+            shortEdges <!-- default, shortEdges, never -->
+        </item>
+    </style>
+</resources>

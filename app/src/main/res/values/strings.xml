@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Covid_Info</string>
+    <string name="go_back_txt">No Info</string>
+    <string name="show">Show</string>
+    <string name="warning_title" >This action will lead to a webpage and the user is souly responsible for the actions!</string>
+    <string name="Cancel">Cancel</string>
+</resources>

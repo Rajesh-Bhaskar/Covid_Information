@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/px_8"
+    android:paddingStart="@dimen/px_20"
+    android:paddingTop="@dimen/px_20"
+    android:paddingEnd="@dimen/px_20"
+    android:paddingBottom="@dimen/px_10">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warning_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pt_16"
+        android:visibility="visible" />
+<LinearLayout
+    android:id="@+id/liiioioi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_8"
+    android:layout_below="@+id/title"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/white" />
+
+    <TextView
+        android:id="@+id/agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/check_box"
+        android:text="By clicking I agree to it."
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/pt_16"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liiioioi"
+        android:layout_marginTop="@dimen/px_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.androidapp.covid_info.coustumUI.GradientTextView
+            android:id="@+id/cancel"
+            style="@style/rounded_gradient_btn"
+            android:backgroundTint="@color/red"
+            android:layout_margin="@dimen/px_8"
+            android:textColor="@color/white"
+            android:text="@string/Cancel" />
+
+        <com.androidapp.covid_info.coustumUI.GradientTextView
+            android:id="@+id/confirm"
+            style="@style/rounded_gradient_btn"
+            android:layout_margin="@dimen/px_8"
+            android:textColor="@color/white"
+            android:text="@string/show" />
+    </LinearLayout>
+</RelativeLayout>

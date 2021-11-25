@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/pt_11"
+        >
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_8"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Global"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/pt_16"
+            android:textStyle="bold"
+            tools:text="Global" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/country_name"
+            >
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/NewConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text="NewConfirmed"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8" />
+
+                <TextView
+                    android:id="@+id/totalConfirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="totalConfirmed"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="totalConfirmed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/NewConfirmednum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="12345" />
+
+                <TextView
+                    android:id="@+id/totalConfirmednum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="34555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/NewDeaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text="NewDeaths"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="NewDeaths" />
+
+                <TextView
+                    android:id="@+id/totalDeath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="totalDeath"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="totalDeath" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/NewDeathsnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="56565" />
+
+                <TextView
+                    android:id="@+id/totalDeathnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="5456484" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/NewRecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text="NewRecovered"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="NewRecovered" />
+
+                <TextView
+                    android:id="@+id/totalrecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="totalrecovered"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="totalrecovered" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/NewRecoverednum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="4854854" />
+
+                <TextView
+                    android:id="@+id/totalrecoverednum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_8"
+                    tools:text="659899565" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/pt_30"
+    android:paddingBottom="@dimen/pt_24"
+    >
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swife_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:padding="@dimen/px_5"
+            tools:visibility="visible" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
+    <include layout="@layout/error_no_data_layout" />
+</LinearLayout>
